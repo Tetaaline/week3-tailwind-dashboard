@@ -148,6 +148,89 @@
           </article>
         </section>
 
+        <!-- Deliveries table -->
+        <section class="card p-0" aria-labelledby="deliveries-title">
+          <div class="flex flex-col gap-3 border-b border-bean-100 p-5 sm:flex-row sm:items-center sm:justify-between dark:border-bean-800">
+            <div>
+              <h2 id="deliveries-title" class="card-title">Today's cherry deliveries</h2>
+              <p class="text-sm text-bean-600 dark:text-bean-300">Weighed at the station and paid by mobile money.</p>
+            </div>
+          </div>
+
+          <!-- overflow-x-auto = sideways scroll on small screens -->
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[720px] text-left text-sm">
+              <thead class="bg-bean-50 text-xs uppercase tracking-wide text-bean-600 dark:bg-bean-950/40 dark:text-bean-300">
+                <tr>
+                  <th scope="col" class="px-5 py-3 font-semibold">Farmer</th>
+                  <th scope="col" class="px-5 py-3 font-semibold">Station</th>
+                  <th scope="col" class="px-5 py-3 text-right font-semibold">Weight</th>
+                  <th scope="col" class="px-5 py-3 font-semibold">Grade</th>
+                  <th scope="col" class="px-5 py-3 text-right font-semibold">Payout</th>
+                  <th scope="col" class="px-5 py-3 font-semibold">Status</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-bean-100 dark:divide-bean-800">
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Jean Bosco Habimana</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0412</p></td>
+                  <td class="px-5 py-3.5">Nyamasheke</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">142 kg</td>
+                  <td class="px-5 py-3.5">A</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 63,900</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-paid">● Paid</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Claudine Mukamana</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0398</p></td>
+                  <td class="px-5 py-3.5">Huye Hills</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">96 kg</td>
+                  <td class="px-5 py-3.5">A</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 43,200</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-pending">● Pending</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Emmanuel Niyonzima</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0377</p></td>
+                  <td class="px-5 py-3.5">Gakenke</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">210 kg</td>
+                  <td class="px-5 py-3.5">B</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 79,800</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-paid">● Paid</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Vestine Uwimana</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0355</p></td>
+                  <td class="px-5 py-3.5">Nyamasheke</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">58 kg</td>
+                  <td class="px-5 py-3.5">A</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 26,100</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-failed">● Failed</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Patrick Mugisha</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0341</p></td>
+                  <td class="px-5 py-3.5">Rulindo</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">175 kg</td>
+                  <td class="px-5 py-3.5">A</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 78,750</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-paid">● Paid</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Grace Ingabire</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0329</p></td>
+                  <td class="px-5 py-3.5">Huye Hills</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">121 kg</td>
+                  <td class="px-5 py-3.5">B</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 45,980</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-pending">● Pending</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Olivier Ndayisaba</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0310</p></td>
+                  <td class="px-5 py-3.5">Gakenke</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">88 kg</td>
+                  <td class="px-5 py-3.5">A</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 39,600</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-paid">● Paid</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
 
       </main>
