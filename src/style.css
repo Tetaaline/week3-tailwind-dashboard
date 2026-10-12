@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Dark mode is toggled by adding the .dark class to <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* ---------- Theme: brand colors + custom fonts ---------- */
 @theme {
   /* Fonts (loaded from Google Fonts in index.html) */
