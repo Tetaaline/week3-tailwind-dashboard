@@ -232,7 +232,61 @@
           </div>
         </section>
 
+        <!-- Two panels: 1 column → 2 columns on lg -->
+        <section class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          <article class="card" aria-labelledby="activity-title">
+            <div class="mb-4 flex items-center justify-between">
+              <h2 id="activity-title" class="card-title">Recent activity</h2>
+              <a href="#" class="text-sm font-semibold text-bean-600 transition hover:text-bean-800 hover:underline dark:text-bean-300 dark:hover:text-bean-100">View all</a>
+            </div>
+            <ol class="space-y-4">
+              <li class="flex gap-3">
+                <span class="mt-1 size-2.5 shrink-0 rounded-full bg-leaf-500" aria-hidden="true"></span>
+                <div><p class="text-sm"><span class="font-semibold">RWF 3.1M</span> sent to 214 farmers by mobile money</p><p class="text-xs text-bean-500 dark:text-bean-300">12 minutes ago</p></div>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 size-2.5 shrink-0 rounded-full bg-bean-500" aria-hidden="true"></span>
+                <div><p class="text-sm"><span class="font-semibold">Huye Hills</span> started fermenting lot #HH-27</p><p class="text-xs text-bean-500 dark:text-bean-300">1 hour ago</p></div>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 size-2.5 shrink-0 rounded-full bg-cherry-500" aria-hidden="true"></span>
+                <div><p class="text-sm">Payout to <span class="font-semibold">Vestine Uwimana</span> failed – wrong phone number</p><p class="text-xs text-bean-500 dark:text-bean-300">2 hours ago</p></div>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 size-2.5 shrink-0 rounded-full bg-amber-500" aria-hidden="true"></span>
+                <div><p class="text-sm"><span class="font-semibold">8 new farmers</span> registered in Rulindo</p><p class="text-xs text-bean-500 dark:text-bean-300">Yesterday</p></div>
+              </li>
+            </ol>
+          </article>
 
+          <article class="card" aria-labelledby="stations-title">
+            <div class="mb-4 flex items-center justify-between">
+              <h2 id="stations-title" class="card-title">Washing station capacity</h2>
+              <span class="text-xs text-bean-500 dark:text-bean-300">Today</span>
+            </div>
+            <ul class="space-y-5">
+              <li>
+                <div class="mb-1.5 flex justify-between text-sm"><span class="font-medium">Nyamasheke</span><span class="tabular-nums text-bean-600 dark:text-bean-300">92%</span></div>
+                <div class="h-2.5 rounded-full bg-bean-100 dark:bg-bean-800" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Nyamasheke capacity"><div class="h-2.5 w-[92%] rounded-full bg-cherry-500"></div></div>
+              </li>
+              <li>
+                <div class="mb-1.5 flex justify-between text-sm"><span class="font-medium">Huye Hills</span><span class="tabular-nums text-bean-600 dark:text-bean-300">74%</span></div>
+                <div class="h-2.5 rounded-full bg-bean-100 dark:bg-bean-800" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" aria-label="Huye Hills capacity"><div class="h-2.5 w-[74%] rounded-full bg-bean-500"></div></div>
+              </li>
+              <li>
+                <div class="mb-1.5 flex justify-between text-sm"><span class="font-medium">Gakenke</span><span class="tabular-nums text-bean-600 dark:text-bean-300">58%</span></div>
+                <div class="h-2.5 rounded-full bg-bean-100 dark:bg-bean-800" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" aria-label="Gakenke capacity"><div class="h-2.5 w-[58%] rounded-full bg-leaf-500"></div></div>
+              </li>
+              <li>
+                <div class="mb-1.5 flex justify-between text-sm"><span class="font-medium">Rulindo</span><span class="tabular-nums text-bean-600 dark:text-bean-300">35%</span></div>
+                <div class="h-2.5 rounded-full bg-bean-100 dark:bg-bean-800" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="Rulindo capacity"><div class="h-2.5 w-[35%] rounded-full bg-leaf-500"></div></div>
+              </li>
+            </ul>
+            <p class="mt-5 rounded-xl bg-bean-50 p-3 text-xs text-bean-700 dark:bg-bean-950/50 dark:text-bean-200">Tip: send Nyamasheke's overflow to Gakenke – it's 40 minutes away and has room.</p>
+          </article>
+        </section>
+
+        <footer class="pb-4 pt-2 text-center text-xs text-bean-500 dark:text-bean-300">Coffee Collective · a fictional cooperative · Week 3 Tailwind project</footer>
       </main>
     </div>
 
