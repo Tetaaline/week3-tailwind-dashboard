@@ -148,10 +148,198 @@
           </article>
         </section>
 
+        <!-- Deliveries table -->
+        <section class="card p-0" aria-labelledby="deliveries-title">
+          <div class="flex flex-col gap-3 border-b border-bean-100 p-5 sm:flex-row sm:items-center sm:justify-between dark:border-bean-800">
+            <div>
+              <h2 id="deliveries-title" class="card-title">Today's cherry deliveries</h2>
+              <p class="text-sm text-bean-600 dark:text-bean-300">Weighed at the station and paid by mobile money.</p>
+            </div>
+            <button id="open-modal" class="btn btn-primary">
+              <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+              Register farmer
+            </button>
+          </div>
 
+          <!-- overflow-x-auto = sideways scroll on small screens -->
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[720px] text-left text-sm">
+              <thead class="bg-bean-50 text-xs uppercase tracking-wide text-bean-600 dark:bg-bean-950/40 dark:text-bean-300">
+                <tr>
+                  <th scope="col" class="px-5 py-3 font-semibold">Farmer</th>
+                  <th scope="col" class="px-5 py-3 font-semibold">Station</th>
+                  <th scope="col" class="px-5 py-3 text-right font-semibold">Weight</th>
+                  <th scope="col" class="px-5 py-3 font-semibold">Grade</th>
+                  <th scope="col" class="px-5 py-3 text-right font-semibold">Payout</th>
+                  <th scope="col" class="px-5 py-3 font-semibold">Status</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-bean-100 dark:divide-bean-800">
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Jean Bosco Habimana</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0412</p></td>
+                  <td class="px-5 py-3.5">Nyamasheke</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">142 kg</td>
+                  <td class="px-5 py-3.5">A</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 63,900</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-paid">● Paid</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Claudine Mukamana</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0398</p></td>
+                  <td class="px-5 py-3.5">Huye Hills</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">96 kg</td>
+                  <td class="px-5 py-3.5">A</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 43,200</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-pending">● Pending</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Emmanuel Niyonzima</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0377</p></td>
+                  <td class="px-5 py-3.5">Gakenke</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">210 kg</td>
+                  <td class="px-5 py-3.5">B</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 79,800</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-paid">● Paid</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Vestine Uwimana</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0355</p></td>
+                  <td class="px-5 py-3.5">Nyamasheke</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">58 kg</td>
+                  <td class="px-5 py-3.5">A</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 26,100</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-failed">● Failed</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Patrick Mugisha</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0341</p></td>
+                  <td class="px-5 py-3.5">Rulindo</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">175 kg</td>
+                  <td class="px-5 py-3.5">A</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 78,750</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-paid">● Paid</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Grace Ingabire</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0329</p></td>
+                  <td class="px-5 py-3.5">Huye Hills</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">121 kg</td>
+                  <td class="px-5 py-3.5">B</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 45,980</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-pending">● Pending</span></td>
+                </tr>
+                <tr class="transition hover:bg-bean-50 dark:hover:bg-bean-800/60">
+                  <td class="px-5 py-3.5"><p class="font-semibold">Olivier Ndayisaba</p><p class="text-xs text-bean-500 dark:text-bean-300">#KW-0310</p></td>
+                  <td class="px-5 py-3.5">Gakenke</td>
+                  <td class="px-5 py-3.5 text-right tabular-nums">88 kg</td>
+                  <td class="px-5 py-3.5">A</td>
+                  <td class="px-5 py-3.5 text-right font-semibold tabular-nums">RWF 39,600</td>
+                  <td class="px-5 py-3.5"><span class="badge badge-paid">● Paid</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
+        <!-- Two panels: 1 column → 2 columns on lg -->
+        <section class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          <article class="card" aria-labelledby="activity-title">
+            <div class="mb-4 flex items-center justify-between">
+              <h2 id="activity-title" class="card-title">Recent activity</h2>
+              <a href="#" class="text-sm font-semibold text-bean-600 transition hover:text-bean-800 hover:underline dark:text-bean-300 dark:hover:text-bean-100">View all</a>
+            </div>
+            <ol class="space-y-4">
+              <li class="flex gap-3">
+                <span class="mt-1 size-2.5 shrink-0 rounded-full bg-leaf-500" aria-hidden="true"></span>
+                <div><p class="text-sm"><span class="font-semibold">RWF 3.1M</span> sent to 214 farmers by mobile money</p><p class="text-xs text-bean-500 dark:text-bean-300">12 minutes ago</p></div>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 size-2.5 shrink-0 rounded-full bg-bean-500" aria-hidden="true"></span>
+                <div><p class="text-sm"><span class="font-semibold">Huye Hills</span> started fermenting lot #HH-27</p><p class="text-xs text-bean-500 dark:text-bean-300">1 hour ago</p></div>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 size-2.5 shrink-0 rounded-full bg-cherry-500" aria-hidden="true"></span>
+                <div><p class="text-sm">Payout to <span class="font-semibold">Vestine Uwimana</span> failed – wrong phone number</p><p class="text-xs text-bean-500 dark:text-bean-300">2 hours ago</p></div>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 size-2.5 shrink-0 rounded-full bg-amber-500" aria-hidden="true"></span>
+                <div><p class="text-sm"><span class="font-semibold">8 new farmers</span> registered in Rulindo</p><p class="text-xs text-bean-500 dark:text-bean-300">Yesterday</p></div>
+              </li>
+            </ol>
+          </article>
+
+          <article class="card" aria-labelledby="stations-title">
+            <div class="mb-4 flex items-center justify-between">
+              <h2 id="stations-title" class="card-title">Washing station capacity</h2>
+              <span class="text-xs text-bean-500 dark:text-bean-300">Today</span>
+            </div>
+            <ul class="space-y-5">
+              <li>
+                <div class="mb-1.5 flex justify-between text-sm"><span class="font-medium">Nyamasheke</span><span class="tabular-nums text-bean-600 dark:text-bean-300">92%</span></div>
+                <div class="h-2.5 rounded-full bg-bean-100 dark:bg-bean-800" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Nyamasheke capacity"><div class="h-2.5 w-[92%] rounded-full bg-cherry-500"></div></div>
+              </li>
+              <li>
+                <div class="mb-1.5 flex justify-between text-sm"><span class="font-medium">Huye Hills</span><span class="tabular-nums text-bean-600 dark:text-bean-300">74%</span></div>
+                <div class="h-2.5 rounded-full bg-bean-100 dark:bg-bean-800" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" aria-label="Huye Hills capacity"><div class="h-2.5 w-[74%] rounded-full bg-bean-500"></div></div>
+              </li>
+              <li>
+                <div class="mb-1.5 flex justify-between text-sm"><span class="font-medium">Gakenke</span><span class="tabular-nums text-bean-600 dark:text-bean-300">58%</span></div>
+                <div class="h-2.5 rounded-full bg-bean-100 dark:bg-bean-800" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" aria-label="Gakenke capacity"><div class="h-2.5 w-[58%] rounded-full bg-leaf-500"></div></div>
+              </li>
+              <li>
+                <div class="mb-1.5 flex justify-between text-sm"><span class="font-medium">Rulindo</span><span class="tabular-nums text-bean-600 dark:text-bean-300">35%</span></div>
+                <div class="h-2.5 rounded-full bg-bean-100 dark:bg-bean-800" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="Rulindo capacity"><div class="h-2.5 w-[35%] rounded-full bg-leaf-500"></div></div>
+              </li>
+            </ul>
+            <p class="mt-5 rounded-xl bg-bean-50 p-3 text-xs text-bean-700 dark:bg-bean-950/50 dark:text-bean-200">Tip: send Nyamasheke's overflow to Gakenke – it's 40 minutes away and has room.</p>
+          </article>
+        </section>
+
+        <footer class="pb-4 pt-2 text-center text-xs text-bean-500 dark:text-bean-300">Coffee Collective · a fictional cooperative · Week 3 Tailwind project</footer>
       </main>
     </div>
 
+    <!-- ============ MODAL: Register farmer ============ -->
+    <dialog
+      id="farmer-modal"
+      class="m-auto w-[calc(100%-2rem)] max-w-lg rounded-2xl bg-white p-0 text-bean-900 shadow-2xl backdrop:bg-bean-950/60 backdrop:backdrop-blur-sm dark:bg-bean-900 dark:text-bean-50"
+      aria-labelledby="modal-title"
+    >
+      <form id="farmer-form" method="dialog" class="space-y-4 p-6">
+        <div class="flex items-start justify-between">
+          <div>
+            <h2 id="modal-title" class="card-title text-xl">Register a farmer</h2>
+            <p class="text-sm text-bean-600 dark:text-bean-300">They'll get payouts on this mobile-money number.</p>
+          </div>
+          <button type="button" data-close class="rounded-lg p-1.5 text-bean-500 transition hover:bg-bean-100 hover:text-bean-800 dark:hover:bg-bean-800 dark:hover:text-bean-100" aria-label="Close dialog">
+            <svg class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div class="sm:col-span-2">
+            <label for="full-name" class="form-label">Full name</label>
+            <input id="full-name" name="name" type="text" required placeholder="e.g. Divine Uwera" class="form-input" />
+          </div>
+          <div>
+            <label for="phone" class="form-label">Mobile-money number</label>
+            <input id="phone" name="phone" type="tel" required placeholder="078 123 4567" class="form-input" />
+          </div>
+          <div>
+            <label for="station" class="form-label">Washing station</label>
+            <select id="station" name="station" class="form-input">
+              <option>Nyamasheke</option>
+              <option>Huye Hills</option>
+              <option>Gakenke</option>
+              <option>Rulindo</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <label for="trees" class="form-label">Number of coffee trees</label>
+            <input id="trees" name="trees" type="number" min="1" placeholder="e.g. 450" class="form-input" />
+          </div>
+        </div>
+
+        <div class="flex flex-col-reverse gap-2 pt-2 sm:flex-row sm:justify-end">
+          <button type="button" data-close class="btn btn-ghost">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save farmer</button>
+        </div>
+      </form>
+    </dialog>
   </body>
 </html>
