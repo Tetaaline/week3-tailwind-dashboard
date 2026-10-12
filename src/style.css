@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+/* ---------- Theme: brand colors + custom fonts ---------- */
+@theme {
+  /* Fonts (loaded from Google Fonts in index.html) */
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+
+  /* "bean" – roasted coffee browns (main brand palette) */
+  --color-bean-50: #fbf6f1;
+  --color-bean-100: #f4e8dc;
+  --color-bean-200: #e8cfb6;
+  --color-bean-300: #d9ae87;
+  --color-bean-400: #c88a5a;
+  --color-bean-500: #b8703e;
+  --color-bean-600: #9c5932;
+  --color-bean-700: #7d452b;
+  --color-bean-800: #5f3524;
+  --color-bean-900: #3f241a;
+  --color-bean-950: #24140e;
+
+  /* "leaf" – coffee-plant greens (accent) */
+  --color-leaf-50: #f1f8f2;
+  --color-leaf-100: #dcefe0;
+  --color-leaf-300: #8fca9d;
+  --color-leaf-500: #3f9a5a;
+  --color-leaf-600: #2f7d47;
+  --color-leaf-700: #27643b;
+
+  /* "cherry" – ripe coffee-cherry red (accent) */
+  --color-cherry-100: #fde4e4;
+  --color-cherry-500: #d64545;
+  --color-cherry-700: #a12c2c;
+
+  /* "cream" – warm page background */
+  --color-cream: #fdfaf6;
+}
