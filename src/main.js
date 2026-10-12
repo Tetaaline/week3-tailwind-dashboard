@@ -16,6 +16,14 @@ document.getElementById('close-menu').addEventListener('click', () => setMenu(fa
 overlay.addEventListener('click', () => setMenu(false))
 document.addEventListener('keydown', (e) => e.key === 'Escape' && setMenu(false))
 
+// ---- Dark mode toggle (uses Tailwind's dark: variant) ----
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  const isDark = document.documentElement.classList.toggle('dark')
+  try {
+    localStorage.setItem('theme', isDark ? 'dark' : 'light')
+  } catch (e) {}
+})
+
 // ---- "Register farmer" modal ----
 const modal = document.getElementById('farmer-modal')
 document.getElementById('open-modal').addEventListener('click', () => modal.showModal())

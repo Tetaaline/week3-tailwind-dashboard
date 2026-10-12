@@ -12,6 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Apply saved theme before paint to avoid a flash -->
+    <script>
+      try {
+        if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
     <script type="module" src="/src/main.js"></script>
   </head>
 
@@ -98,6 +104,10 @@
               <input id="search" type="search" placeholder="Search farmers, lots…" class="form-input w-56 pl-9 lg:w-72" />
             </div>
 
+            <button id="theme-toggle" class="rounded-xl p-2.5 text-bean-700 transition hover:bg-bean-100 dark:text-bean-100 dark:hover:bg-bean-800" aria-label="Toggle dark mode">
+              <svg class="size-5 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+              <svg class="hidden size-5 dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg>
+            </button>
 
             <button class="flex items-center gap-2 rounded-full p-0.5 transition hover:ring-2 hover:ring-bean-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-bean-500" aria-label="Account menu for Aline Uwase">
               <img src="/avatar.svg" alt="Profile picture of Aline Uwase" class="size-10 rounded-full" />
